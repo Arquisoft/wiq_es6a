@@ -569,7 +569,7 @@ For documentation of your own system you use better the <em>plain</em> version.<
                 <p>Eloy Martín Reig</p>
             </li>
             <li>
-                <p>Óscar</p>
+                <p>Óscar Abad López</p>
             </li>
             <li>
                 <p>Sara Fernández González</p>
@@ -613,6 +613,23 @@ These include</p>
 </div>
 <div class="sect2">
 <h3 id="_requirements_overview">1.1. Requirements Overview</h3>
+<div class="ulist">
+    <ul>
+        <li>
+            <p>El sistema permitirá a los usuarios registrarse e iniciar sesión.</p>
+        </li>
+        <li>
+            <p>El sistema permitirá a los usuarios acceder a un juego de preguntas en el que tendrán un tiempo para contestar.
+            Este juego consistirá en una pregunta con cuatro posibles respuestas generado de manera automática.</p>
+        </li>
+        <li>
+            <p>El sistema permitirá a los usuarios ver sus estadísticas así como el historial de sus preguntas respondidas.</p>
+        </li>
+        <li>
+            <p>El sistema permitirá a los usuarios buscar a otros usuarios y ver sus estadísticas de juego.</p>
+        </li>
+    </ul>
+</div>
 <div class="sidebarblock arc42help">
 <div class="content">
 <div class="paragraph">
@@ -643,6 +660,45 @@ If requirements documents exist this overview should refer to these documents.</
 </div>
 <div class="sect2">
 <h3 id="_quality_goals">1.2. Quality Goals</h3>
+    <div class = "paragraph">
+        <p>Segun ISO/IEC 25010</p>
+    </div>
+    <table class="tableblock frame-all grid-all stretch">
+        <colgroup>
+            <col style="width: 20%;">
+            <col style="width: 40%;">
+            <col style="width: 40%;">
+        </colgroup>
+        <thead>
+        <tr>
+            <th class="tableblock halign-left valign-top">Objetivo de Calidad</th>
+            <th class="tableblock halign-left valign-top">Realización</th>
+            <th class="tableblock halign-left valign-top">Prioridad</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><em>Usabilidad</em></p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><em>Para que la aplicación sea
+            usable se buscará mantener un diseño uniforme y basarse en la predictibilidad para que el aprendizaje de
+            uso de la aplicación sea sencillo y para que no se complique la experiencia del usuario.</em></p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><em>5</em></p></td>
+        </tr>
+        <tr>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><em>Testabilidad</em></p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><em>Se realizarán pruebas lo más exhaustivas
+            posible para asegurar el correcto funcionamiento de todos los servicios presentes en la aplicación.</em></p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><em>4</em></p></td>
+        </tr>
+        <tr>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><em>Fiabilidad</em></p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><em>Se buscará que el uso de recursos dentro
+            de la aplicación sea lo más optimizado posible para que el funcionamiento de la aplicación no se vea afectado
+            en velocidad o eficacia.</em></p></td>
+            <td class="tableblock halign-left valign-top"><p class="tableblock"><em>4</em></p></td>
+        </tr>
+        </tbody>
+    </table>
 <div class="sidebarblock arc42help">
 <div class="content">
 <div class="paragraph">
@@ -719,21 +775,30 @@ These stakeholders determine the extent and the level of detail of your work and
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Role/Name</th>
-<th class="tableblock halign-left valign-top">Contact</th>
-<th class="tableblock halign-left valign-top">Expectations</th>
+<th class="tableblock halign-left valign-top">Rol</th>
+<th class="tableblock halign-left valign-top">Descripción</th>
+<th class="tableblock halign-left valign-top">Expectativas</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>&lt;Role-1&gt;</em></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>&lt;Contact-1&gt;</em></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>&lt;Expectation-1&gt;</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Cliente</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Nuestro cliente es la empresa ficticia HappySw, este
+papel es realizado por los profesores de la asignatura.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Una aplicación que cumpla todos los requisitos enumerado en 1.1</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>&lt;Role-2&gt;</em></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>&lt;Contact-2&gt;</em></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>&lt;Expectation-2&gt;</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Equipo de desarrollo</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Los alumnos parte de este trabajo que han sido nombrados en la introducción.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Desarrollar una aplicación completa que tenga un reflejo adecuado en la
+documentación. Tiene que cumplir con los requisitos impuestos y además demostrar el trabajo puesto en el proyecto.</em></p></td>
+</tr>
+<tr>
+    <td class="tableblock halign-left valign-top"><p class="tableblock"><em>Usuarios</em></p></td>
+    <td class="tableblock halign-left valign-top"><p class="tableblock"><em>Las personas objetivo de la aplicación que probarían o
+    usarían el producto final. Los jugadores.</em></p></td>
+    <td class="tableblock halign-left valign-top"><p class="tableblock"><em>Un juego divertido que funcione bien y que haga
+        preguntas diversas para que suponga algún reto.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -857,16 +922,11 @@ together with a mapping table showing the relationships between channels and inp
 </div>
 </div>
 </div>
-<div class="paragraph">
-<p><strong>&lt;Diagram or Table&gt;</strong></p>
+<div class = "imageblock">
+    <div class = "content">
+        <img src="images/diagrama_deploy.png" alt="Contexto técnico">
+    </div>
 </div>
-<div class="paragraph">
-<p><strong>&lt;optionally: Explanation of technical interfaces&gt;</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>&lt;Mapping Input/Output to Channels&gt;</strong></p>
-</div>
-<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
