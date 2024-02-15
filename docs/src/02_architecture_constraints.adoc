@@ -1,0 +1,24 @@
+
+[[section-architecture-constraints]]
+== Architecture Constraints
+
+|===
+| *_Restricciones de arquitectura_* | *_Descripción_*
+
+| *_Tecnología de Desarrollo_* | El equipo de desarrollo debe desarrollar la aplicación empleando tecnologias web compatibles con los requerimientos y estandares actuales de RTVE.
+
+| *_Plataforma de Implementación_* | La aplicación deberá implementarse sobre una plataforma de alojamiento web que cumpla con los requisitos de rendimiento, seguridad y escalabilidad de RTVE.
+
+| *_Cumplimiento de Normativas de Privacidad_* | La arquitectura debe seguir las regulaciones de privacidad de datos actualizadas para garantizar la privacidad de los concursantes.
+
+| *_Compatibilidad con Navegadores_* | Para garantizar una experiencia de usuario consistente, la aplicación debe ser compatible con un gran abanico de navegadores web seguros.
+
+| *_Seguridad de la Información_* | La solicitud deberá seguir estas medidas de seguridad: autenticación de concursantes, control de acceso y cifrado de datos; con el fin de proteger la información confidencial de los concursantes, pero permitiéndoles comprobarla.
+
+| *_Escalabilidad_* | La arquitectura debe ser escalable para manejar un mayor número de concursantes sin comprometer el rendimiento.
+
+| *_Mantenibilidad del Código_* | La mejor opción es emplear técnicas de desarrollo de software que promuevan un código limpio y bien documentado. Esto facilitará la actualización y el mantenimiento.
+
+| *_Tiempo de Desarrollo_* | El equipo de desarrollo deberá desarrollar la aplicación cumpliendo los plazos establecidos. Incluso si eso significa utilizar tecnologías de desarrollo alternativas o cambiar las decisiones arquitectónicas originales.
+
+|===
