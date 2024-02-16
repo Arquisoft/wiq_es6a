@@ -5,9 +5,10 @@
 |===
 | Término      | Definición
 | Backend | 
+| Base de datos |
 | Frontend | 
 | JSON     | Formato de texto diseñado para el almacenamiento e intercambio de datos que forma parte del sistema de JavaScript.
 | Microservicio |
-| Testabilidad | 
+| Testabilidad | Cualidad de un producto software que permite que sea probado debidamente.
 
 |===
