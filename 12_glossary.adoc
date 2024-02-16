@@ -4,5 +4,5 @@
 [options="header"]
 |===
 | Término      | Definición
-| Plantilla     | Formato para el glosario
+| JSON     | Formato de texto diseñado para el almacenamiento e intercambio de datos que forma parte del sistema de JavaScript.
 |===
