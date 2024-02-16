@@ -1,0 +1,8 @@
+[[section-glossary]]
+== Glossary
+
+[options="header"]
+|===
+| Término      | Definición
+| Plantilla     | Formato para el glosario
+|===
