@@ -4,5 +4,10 @@
 [options="header"]
 |===
 | Término      | Definición
+| Backend | 
+| Frontend | 
 | JSON     | Formato de texto diseñado para el almacenamiento e intercambio de datos que forma parte del sistema de JavaScript.
+| Microservicio |
+| Testabilidad | 
+
 |===
