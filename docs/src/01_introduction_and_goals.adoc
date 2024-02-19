@@ -3,6 +3,19 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-introduction-and-goals]]
 == Introduction and Goals
 
+Saber y Ganar es el proyecto de Arquitectura de Software desarrollado por el equipo 6A. Los integrantes de este equipo son:
+
+* Ángel Luis Álvarez Iglesias
+* Álvaro García Miranda
+* Ben James Coleman Kheyyali
+* Eloy Martín Reig
+* Óscar Abad López
+* Sara Fernández González
+
+Con el profesor: Jorge Álvarez Fidalgo
+
+Este proyecto consiste en una aplicación con un juego de preguntas y respuestas. Además los usuarios registrados podrán ver sus estadísticas y las de otros jugadores.
+
 [role="arc42help"]
 ****
 Describes the relevant requirements and the driving forces that software architects and development team must consider. 
@@ -16,6 +29,11 @@ These include
 ****
 
 === Requirements Overview
+
+* El sistema permitirá a los usuarios registrarse e iniciar sesión.
+* El sistema permitirá a los usuarios acceder a un juego de preguntas en el que tendrán un tiempo para contestar. Este juego consistirá en una pregunta con cuatro posibles respuestas generado de manera automática.
+* El sistema permitirá a los usuarios ver sus estadísticas así como el historial de sus preguntas respondidas.
+* El sistema permitirá a los usuarios buscar a otros usuarios y ver sus estadísticas de juego.
 
 [role="arc42help"]
 ****
@@ -42,6 +60,15 @@ See https://docs.arc42.org/section-1/[Introduction and Goals] in the arc42 docum
 ****
 
 === Quality Goals
+Segun ISO/IEC 25010
+
+[options="header",cols="1,2,2"]
+|===
+|Objetivo de Calidad|Realización|Prioridad
+| Usabilidad | Para que la aplicación sea usable se buscará mantener un diseño uniforme y basarse en la predictibilidad para que el aprendizaje de uso de la aplicación sea sencillo y para que no se complique la experiencia del usuario.| 5
+| Testabilidad | Se realizarán pruebas lo más exhaustivas posible para asegurar el correcto funcionamiento de todos los servicios presentes en la aplicación. | 4
+| Fiabilidad | Se buscará que el uso de recursos dentro de la aplicación sea lo más optimizado posible para que el funcionamiento de la aplicación no se vea afectado en velocidad o eficacia. | 4
+|===
 
 [role="arc42help"]
 ****
@@ -87,7 +114,8 @@ Table with role names, person names, and their expectations with respect to the 
 
 [options="header",cols="1,2,2"]
 |===
-|Role/Name|Contact|Expectations
-| _<Role-1>_ | _<Contact-1>_ | _<Expectation-1>_
-| _<Role-2>_ | _<Contact-2>_ | _<Expectation-2>_
+|Rol|Descripción|Expectativas
+| Cliente | Nuestro cliente es la empresa ficticia HappySw, este papel es realizado por los profesores de la asignatura. | Una aplicación que cumpla todos los requisitos enumerado en 1.1
+| Equipo de desarrollo | Los alumnos parte de este trabajo que han sido nombrados en la introducción. | Desarrollar una aplicación completa que tenga un reflejo adecuado en la documentación. Tiene que cumplir con los requisitos impuestos y además demostrar el trabajo puesto en el proyecto.
+| Usuarios | Las personas objetivo de la aplicación que probarían o usarían el producto final. Los jugadores. | Un juego divertido que funcione bien y que haga preguntas diversas para que suponga algún reto.
 |===
