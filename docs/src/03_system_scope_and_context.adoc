@@ -8,5 +8,5 @@
 
 === Technical Context
 
-:imagesdir: //images
+:imagesdir: ../images
 image::diagrama_deploy.png[]
