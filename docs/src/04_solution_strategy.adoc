@@ -5,7 +5,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 Elaboramos una aplicacíon, basada en Saber y Ganar, en la que los concursantes pueden registrarse para particiapr, donde en cada ronda tendran que responder varias preguntas, de distintas categorias, donde se guardará
 un registro con las preguntas respondidas por el usuario y podrá revisar su histórico, también podrá ver que preguntas acerto y cuales falló.
 
-.Tecnologías usadas para llevar a cabo:
+=== Tecnologías usadas para llevar a cabo:
 
 * MongoDB: MongoDB es una base de datos NoSQL de código abierto y orientado a documentos. Guarda la información en estructuras de datos BSON (una especificación similar a JSON) con un esquema dinámico, haciendo que la integración de los datos en ciertas aplicaciones sea más fácil y rápida.
 * React JS: Es un framework creado por Facebook ampliamente utlizado para crear componentes de la interfaz de usuario. Escogido por el gran volumen de documentación y por tratar de simplicar la creación de interfaces interactivas de usuario.
