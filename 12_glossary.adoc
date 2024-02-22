@@ -4,11 +4,11 @@
 [options="header"]
 |===
 | Término      | Definición
-| Backend | 
-| Base de datos |
-| Frontend | 
+| Backend | Parte "interna" de la arquitectura de la aplicación, que contiene la lógica que permite la propia funcionalidad del programa y está oculta a los ojos del usuario.
+| Base de datos | Sistema electrónico que contiene un conjunto de datos e información organizada y facilita el acceso y la gestión y manipulación de los mismos.
+| Frontend | Parte "externa" de la arquitectura de la aplicación que incluye la interfaz de usuario y los elementos visuales que se muestran de cara al público.
 | JSON     | Formato de texto diseñado para el almacenamiento e intercambio de datos que forma parte del sistema de JavaScript.
-| Microservicio |
+| Microservicios | Cada uno de los segmentos de la aplicación que ofrecen su propio servicio y funcionalidad específicos, ejecutándose en sus propios procesos y comunicándose entre ellos.
 | Testabilidad | Cualidad de un producto software que permite que sea probado debidamente.
 
 |===
