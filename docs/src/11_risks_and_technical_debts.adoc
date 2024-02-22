@@ -1,0 +1,41 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-technical-risks]]
+== Risks and Technical Debts
+
+A continuación, se presentan en formato tabla los riesgos y posibles deudas técnicas consideredas por el equipo de desarrollo.
+
+.Development Team Risks
+|===
+|Riesgo|Descripción|Medida Preventiva
+
+| Faltas de comunicación entre los miembros del equipo.
+| Las faltas de comunicación podrán causar conflictos en la aplicación desarrollada, que supone una deuda técnica.
+| Se hará uso de varias vías de comunicación para evitar faltas y despejar dudas. Ejemplos de estos son Discord y WhatsApp.
+
+| Posible abandono de algún miembro del equipo.
+| El abandono debido a la carga de trabajo incurrirá una deuda técnica que deberá compensar el resto de miembros del equipo.
+| Se repartirán las tareas en grupos de trabajo de 2 o más miembros para minimizar el impacto que supondría un abandono.
+
+| Inexperiencia con las tecnologías empleadas.
+| Debido a la posible inexperiencia con las tecnologías empleadas en el proyecto, se pueden producir deudas técnicas.
+| Para minimizar el impacto, se recomienda investigar y probar las tecnologías para alcanzar un grado de control mínimo sobre ellas.
+
+|===
+
+.Software Risks
+|===
+|Riesgo|Descripción|Medida Preventiva
+
+| Conflictos en el repositorio GitHub.
+| El acceso múltiple y simultáneo al repositorio desde varios usuarios supone un riesgo de sobreescritura y conflictos de código.
+| Se hará uso de ramas de trabajo para realizar las tareas, además de las vías de comunicación  para coordinar las modificaciones al repositorio.
+
+| Conflictos con los programas desarrollados.
+| El trabajo en paralelo sobre los módulos de la aplicación supone un riesgo de conflicto si no hay estándares para código común a dichos módulos.
+| Se planteará una plantilla de código o nomenclatura de clases, métodos, etc común para aquellos módulos que tengan puntos en común.
+
+|===
+
+.Nota del editor:
+A medida que se desarrolla el proyecto, se actualizará esta sección con los riesgos o deudas técnicas consideradas para los ámbitos de la aplicación.

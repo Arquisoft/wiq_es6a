@@ -1,0 +1,43 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-quality-requirements]]
+== Quality Requirements
+
+A continuación se muestra el árbol de atributos de calidad, cuyas hojas son los escenarios de calidad descritos en la tabla.
+
+
+=== Quality Tree
+
+image::quality_tree.png["Quality Tree"]
+
+=== Quality Scenarios
+
+.Quality Scenarios
+|===
+|Atributo de Calidad|Descripción
+
+| SC1
+| Para mantener la usabilidad de la aplicación, se buscará mantener un diseño uniforme.
+
+| SC2
+| Para no complicar el aprendizaje de uso, la experiencia del usuario se basará en la predictabilidad.
+
+| SC3
+| Se realizarán pruebas exhaustivas para asegurar el correcto funcionamiento de todos los servicios presentes en la aplicación.
+
+| SC4
+| Para mantener la fiabilidad, se buscará un uso de recursos optimizado.
+
+| SC5
+| Se buscará un rendimiento eficiente y rápido para no afectar la experiencia de usuario.
+
+| SC6
+| En cuanto a la seguridad, se bloqueará el acceso a cuentas ajenas.
+
+| SC7
+| Se mantendrán los datos de usuario privados y seguros.
+
+|===
+
+.Nota del editor:
+A medida que se desarrolla el proyecto, se actualizará esta sección con escenarios de calidad más específicos.
