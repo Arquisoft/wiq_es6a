@@ -1,32 +1,28 @@
-ifndef::imagesdir[:imagesdir: ../images]
-
 [[section-solution-strategy]]
 == Solution Strategy
 
+Elaboramos una aplicacíon, basada en Saber y Ganar, en la que los concursantes pueden registrarse para particiapr, donde en cada ronda tendran que responder varias preguntas, de distintas categorias, donde se guardará
+un registro con las preguntas respondidas por el usuario y podrá revisar su histórico, también podrá ver que preguntas acerto y cuales falló.
 
-[role="arc42help"]
-****
-.Contents
-A short summary and explanation of the fundamental decisions and solution strategies, that shape system architecture. It includes
+.Tecnologías usadas para llevar a cabo:
 
-* technology decisions
-* decisions about the top-level decomposition of the system, e.g. usage of an architectural pattern or design pattern
-* decisions on how to achieve key quality goals
-* relevant organizational decisions, e.g. selecting a development process or delegating certain tasks to third parties.
+* MongoDB: MongoDB es una base de datos NoSQL de código abierto y orientado a documentos. Guarda la información en estructuras de datos BSON (una especificación similar a JSON) con un esquema dinámico, haciendo que la integración de los datos en ciertas aplicaciones sea más fácil y rápida.
+* React JS: Es un framework creado por Facebook ampliamente utlizado para crear componentes de la interfaz de usuario. Escogido por el gran volumen de documentación y por tratar de simplicar la creación de interfaces interactivas de usuario.
+* WikiData: Es una base de conocimientos gratuita modificada tanto por seres humanos como por máquinas, y es de donde obtendremos la información para nuestras preguntas.
+* IntelliJ IDEA: entorno de desarrollo integrado para el desarrollo de programas informáticos. Se emplea para desarrollar la documetación y para el desarrollo de la aplicación
 
-.Motivation
-These decisions form the cornerstones for your architecture. They are the foundation for many other detailed decisions or implementation rules.
+.Diseño
+Empleamos un diseño que respetará el estilo mítico del programa de televisión, pero que también
+cumpliera con lo solicitado, que cada participante tendrá su propia cuenta donde se
+guardará su información (su puntuación, el hitórico de preguntas...).
 
-.Form
-Keep the explanations of such key decisions short.
+.Seguridad
+Uno de nuestros principales objetivos a cumplir es la seguridad del usuario, permitiendole acceder a su respectiva información sin riesgos.
 
-Motivate what was decided and why it was decided that way,
-based upon problem statement, quality goals and key constraints.
-Refer to details in the following sections.
+.Testabilidad
+Se realizarán pruebas para cada parte individual de la aplicación, para asegurar el correcto funcionamiento de los diferentes modulos individuales. También se realizarán pruebas tras la unificación del proyecto,
+con el fin de garantizar que la aplicación final se encuentre en buen estado y no se han producido errores de merge.
 
-
-.Further Information
-
-See https://docs.arc42.org/section-4/[Solution Strategy] in the arc42 documentation.
-
-****
+.Interfaz
+La interfaz gráfica será elegida entre todos los miembros del equipo, decidiendo que diseño o idea se ajusta mejor a la aplicación esperada y que elementos resultan más adecuados.
+Para ello se tendrán en cuenta las necesidades de los difentes tipos de usuarios.
