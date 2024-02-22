@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Container, Typography, TextField, Button, Snackbar } from '@mui/material';
 import Main from "./Main";
 
-const Login = ({sendLogin}) => {
+const Login = ({sendLogin, sendUsername}) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -24,6 +24,7 @@ const Login = ({sendLogin}) => {
       setCreatedAt(userCreatedAt);
       setLoginSuccess(true);
       sendLogin(loginSuccess);
+      sendUsername(username);
       setOpenSnackbar(true);
     } catch (error) {
       setError(error.response.data.error);

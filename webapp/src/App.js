@@ -10,6 +10,7 @@ import Main from "./components/Main";
 function App() {
   const [showLogin, setShowLogin] = useState(true);
   const [login, setLogin] = useState(false);
+  const [user, setUser] = useState('');
   const handleToggleView = () => {
     setShowLogin(!showLogin);
   };
@@ -18,16 +19,20 @@ function App() {
     setLogin(loginSuccess)
   }
 
+  const sendUsername = (username) => {
+    setUser(username)
+  }
+
   return (
 
     <Container component="main" maxWidth="xs">
-        {login ? <Main/> : (
+        {login ? <Main username={user}/> : (
             <>
             <CssBaseline />
             <Typography component="h1" variant="h5" align="center" sx={{ marginTop: 2 }}>
         Welcome to the 2024 edition of the Software Architecture course
     </Typography>
-    {showLogin ? <Login sendLogin={sendLogin}/> : <AddUser />}
+    {showLogin ? <Login sendLogin={sendLogin} sendUsername={sendUsername}/> : <AddUser />}
     <Typography component="div" align="center" sx={{ marginTop: 2 }}>
         {showLogin ? (
             <Link name="gotoregister" component="button" variant="body2" onClick={handleToggleView}>
