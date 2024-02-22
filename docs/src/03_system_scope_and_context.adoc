@@ -3,10 +3,11 @@
 
 === Business Context
 
-:imagesdir: images
+:imagesdir: ../images
+image::business.png[]
 
 
 === Technical Context
 
 :imagesdir: ../images
-image::diagrama_deploy.png[]
+image::technical.png[]
