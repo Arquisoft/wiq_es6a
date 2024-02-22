@@ -4,16 +4,7 @@
 == Building Block View
 
 === Whitebox of the Overall System 
-
-[plantuml, "whitebox-overall-system", png]
-----
-actor user as "Usuario"
-Component WIQ
-Component Wikidata
-
-user -right-> WIQ: interactúa
-WIQ <-right-> Wikidata: consulta
-----
+image::5_image_1.png["whitebox-overall-system"]
 
 Motivation::
 WIQ es una aplicación Web en la que los usuarios puedan registrarse y entrar a jugar. 
@@ -30,24 +21,7 @@ Contained Building Blocks::
 | Wikidata | Base de datos colaborativa de conocimiento libre que almacena datos estructurados.
 |===
 
-[plantuml, "level-1", png]
-
-----
-actor user as "Usuario"
-
-Component web as "WebApp" {
-  Component front as "Frontend Web"
-  Component back as "Backend"
-  Database db as "MongoDB"
-}
-
-Component Wikidata
-
-user <-right-> front: interactúa
-front <-right-> back: interactúa
-back <-right-> db: interactúa
-back <-down-> Wikidata: interactúa
-----
+image::5_image_2.png["level-1"]
 
 Motivation::
 Muestra los principales componentes de WIQ.
