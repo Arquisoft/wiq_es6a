@@ -1,73 +1,43 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
-[[section-quality-scenarios]]
+[[section-quality-requirements]]
 == Quality Requirements
 
+A continuación se muestra el árbol de atributos de calidad, cuyas hojas son los escenarios de calidad descritos en la tabla.
 
-[role="arc42help"]
-****
-
-.Content
-This section contains all quality requirements as quality tree with scenarios. The most important ones have already been described in section 1.2. (quality goals)
-
-Here you can also capture quality requirements with lesser priority,
-which will not create high risks when they are not fully achieved.
-
-.Motivation
-Since quality requirements will have a lot of influence on architectural
-decisions you should know for every stakeholder what is really important to them,
-concrete and measurable.
-
-
-.Further Information
-
-See https://docs.arc42.org/section-10/[Quality Requirements] in the arc42 documentation.
-
-****
 
 === Quality Tree
 
-[role="arc42help"]
-****
-.Content
-The quality tree (as defined in ATAM – Architecture Tradeoff Analysis Method) with quality/evaluation scenarios as leafs.
-
-.Motivation
-The tree structure with priorities provides an overview for a sometimes large number of quality requirements.
-
-.Form
-The quality tree is a high-level overview of the quality goals and requirements:
-
-* tree-like refinement of the term "quality". Use "quality" or "usefulness" as a root
-* a mind map with quality categories as main branches
-
-In any case the tree should include links to the scenarios of the following section.
-
-
-****
+image::quality_tree.png["Quality Tree"]
 
 === Quality Scenarios
 
-[role="arc42help"]
-****
-.Contents
-Concretization of (sometimes vague or implicit) quality requirements using (quality) scenarios.
+.Quality Scenarios
+|===
+|Atributo de Calidad|Descripción
 
-These scenarios describe what should happen when a stimulus arrives at the system.
+| SC1
+| Para mantener la usabilidad de la aplicación, se buscará mantener un diseño uniforme.
 
-For architects, two kinds of scenarios are important:
+| SC2
+| Para no complicar el aprendizaje de uso, la experiencia del usuario se basará en la predictabilidad.
 
-* Usage scenarios (also called application scenarios or use case scenarios) describe the system’s runtime reaction to a certain stimulus. This also includes scenarios that describe the system’s efficiency or performance. Example: The system reacts to a user’s request within one second.
-* Change scenarios describe a modification of the system or of its immediate environment. Example: Additional functionality is implemented or requirements for a quality attribute change.
+| SC3
+| Se realizarán pruebas exhaustivas para asegurar el correcto funcionamiento de todos los servicios presentes en la aplicación.
 
-.Motivation
-Scenarios make quality requirements concrete and allow to
-more easily measure or decide whether they are fulfilled.
+| SC4
+| Para mantener la fiabilidad, se buscará un uso de recursos optimizado.
 
-Especially when you want to assess your architecture using methods like
-ATAM you need to describe your quality goals (from section 1.2)
-more precisely down to a level of scenarios that can be discussed and evaluated.
+| SC5
+| Se buscará un rendimiento eficiente y rápido para no afectar la experiencia de usuario.
 
-.Form
-Tabular or free form text.
-****
+| SC6
+| En cuanto a la seguridad, se bloqueará el acceso a cuentas ajenas.
+
+| SC7
+| Se mantendrán los datos de usuario privados y seguros.
+
+|===
+
+.Nota del editor:
+A medida que se desarrolla el proyecto, se actualizará esta sección con escenarios de calidad más específicos.
