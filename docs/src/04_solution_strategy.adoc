@@ -21,8 +21,7 @@
 Uno de nuestros principales objetivos a cumplir es la seguridad del usuario, permitiendole acceder a su respectiva información sin riesgos.
 
 | *_Testabilidad_* | Se realizarán pruebas para cada parte individual de la aplicación, para asegurar el correcto funcionamiento de los diferentes modulos individuales. También se realizarán pruebas tras la unificación del proyecto, con el fin de garantizar que la aplicación final se encuentre en buen estado y no se han producido errores de merge.
-|===
 
-| *_Interfaz_* |La interfaz gráfica será elegida entre todos los miembros del equipo, decidiendo que diseño o idea se ajusta mejor a la aplicación esperada y que elementos resultan más adecuados.
+| *_Interfaz_* | La interfaz gráfica será elegida entre todos los miembros del equipo, decidiendo que diseño o idea se ajusta mejor a la aplicación esperada y que elementos resultan más adecuados.
 Para ello se tendrán en cuenta las necesidades de los difentes tipos de usuarios.
 |===
