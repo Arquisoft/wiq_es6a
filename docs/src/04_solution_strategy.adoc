@@ -1,28 +1,24 @@
-ifndef::imagesdir[:imagesdir: ../images]
 [[section-solution-strategy]]
 == Solution Strategy
 
-Elaboramos una aplicacíon, basada en Saber y Ganar, en la que los concursantes pueden registrarse para particiapr, donde en cada ronda tendran que responder varias preguntas, de distintas categorias, donde se guardará
-un registro con las preguntas respondidas por el usuario y podrá revisar su histórico, también podrá ver que preguntas acerto y cuales falló.
+|===
+| *_Restricciones de arquitectura_* | *_Descripción_*
+| *_Solución Estratégica_* | Elaboramos una aplicacíon, basada en Saber y Ganar, en la que los concursantes pueden registrarse para participar, donde en cada ronda tendran que responder varias preguntas, de distintas categorias, donde se guardará un registro con las preguntas respondidas por el usuario y podrá revisar su histórico, también podrá ver que preguntas acerto y cuales falló.
 
-=== Tecnologías usadas para llevar a cabo:
+| *_Tecnologías usadas para llevar a cabo_* |
 
 * MongoDB: MongoDB es una base de datos NoSQL de código abierto y orientado a documentos. Guarda la información en estructuras de datos BSON (una especificación similar a JSON) con un esquema dinámico, haciendo que la integración de los datos en ciertas aplicaciones sea más fácil y rápida.
 * React JS: Es un framework creado por Facebook ampliamente utlizado para crear componentes de la interfaz de usuario. Escogido por el gran volumen de documentación y por tratar de simplicar la creación de interfaces interactivas de usuario.
 * WikiData: Es una base de conocimientos gratuita modificada tanto por seres humanos como por máquinas, y es de donde obtendremos la información para nuestras preguntas.
 * IntelliJ IDEA: entorno de desarrollo integrado para el desarrollo de programas informáticos. Se emplea para desarrollar la documetación y para el desarrollo de la aplicación
 
-=== Diseño
-Empleamos un diseño que respetará el estilo mítico del programa de televisión, pero que también
-cumpliera con lo solicitado, que cada participante tendrá su propia cuenta donde se
-guardará su información (su puntuación, el hitórico de preguntas...).
+| *_Diseño_* | Empleamos un diseño que respetará el estilo mítico del programa de televisión, pero que también cumpliera con lo solicitado, que cada participante tendrá su propia cuenta donde se guardará su información (su puntuación, el hitórico de preguntas...).
 
-=== Seguridad
+| *_Seguridad_* |
 Uno de nuestros principales objetivos a cumplir es la seguridad del usuario, permitiendole acceder a su respectiva información sin riesgos.
 
-=== Testabilidad
-Se realizarán pruebas para cada parte individual de la aplicación, para asegurar el correcto funcionamiento de los diferentes modulos individuales. También se realizarán pruebas tras la unificación del proyecto,
-con el fin de garantizar que la aplicación final se encuentre en buen estado y no se han producido errores de merge.
+| *_Testabilidad_* | Se realizarán pruebas para cada parte individual de la aplicación, para asegurar el correcto funcionamiento de los diferentes modulos individuales. También se realizarán pruebas tras la unificación del proyecto, con el fin de garantizar que la aplicación final se encuentre en buen estado y no se han producido errores de merge.
+|===
 
 === Interfaz
 La interfaz gráfica será elegida entre todos los miembros del equipo, decidiendo que diseño o idea se ajusta mejor a la aplicación esperada y que elementos resultan más adecuados.
