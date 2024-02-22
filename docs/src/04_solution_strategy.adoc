@@ -8,8 +8,11 @@
 | *_Tecnologías usadas para llevar a cabo_* |
 
 * MongoDB: MongoDB es una base de datos NoSQL de código abierto y orientado a documentos. Guarda la información en estructuras de datos BSON (una especificación similar a JSON) con un esquema dinámico, haciendo que la integración de los datos en ciertas aplicaciones sea más fácil y rápida.
+
 * React JS: Es un framework creado por Facebook ampliamente utlizado para crear componentes de la interfaz de usuario. Escogido por el gran volumen de documentación y por tratar de simplicar la creación de interfaces interactivas de usuario.
+
 * WikiData: Es una base de conocimientos gratuita modificada tanto por seres humanos como por máquinas, y es de donde obtendremos la información para nuestras preguntas.
+
 * IntelliJ IDEA: entorno de desarrollo integrado para el desarrollo de programas informáticos. Se emplea para desarrollar la documetación y para el desarrollo de la aplicación
 
 | *_Diseño_* | Empleamos un diseño que respetará el estilo mítico del programa de televisión, pero que también cumpliera con lo solicitado, que cada participante tendrá su propia cuenta donde se guardará su información (su puntuación, el hitórico de preguntas...).
