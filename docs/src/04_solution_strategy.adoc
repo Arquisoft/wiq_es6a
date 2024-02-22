@@ -1,3 +1,4 @@
+ifndef::imagesdir[:imagesdir: ../images]
 [[section-solution-strategy]]
 == Solution Strategy
 
@@ -11,18 +12,18 @@ un registro con las preguntas respondidas por el usuario y podrá revisar su his
 * WikiData: Es una base de conocimientos gratuita modificada tanto por seres humanos como por máquinas, y es de donde obtendremos la información para nuestras preguntas.
 * IntelliJ IDEA: entorno de desarrollo integrado para el desarrollo de programas informáticos. Se emplea para desarrollar la documetación y para el desarrollo de la aplicación
 
-.Diseño
+=== Diseño
 Empleamos un diseño que respetará el estilo mítico del programa de televisión, pero que también
 cumpliera con lo solicitado, que cada participante tendrá su propia cuenta donde se
 guardará su información (su puntuación, el hitórico de preguntas...).
 
-.Seguridad
+=== Seguridad
 Uno de nuestros principales objetivos a cumplir es la seguridad del usuario, permitiendole acceder a su respectiva información sin riesgos.
 
-.Testabilidad
+=== Testabilidad
 Se realizarán pruebas para cada parte individual de la aplicación, para asegurar el correcto funcionamiento de los diferentes modulos individuales. También se realizarán pruebas tras la unificación del proyecto,
 con el fin de garantizar que la aplicación final se encuentre en buen estado y no se han producido errores de merge.
 
-.Interfaz
+=== Interfaz
 La interfaz gráfica será elegida entre todos los miembros del equipo, decidiendo que diseño o idea se ajusta mejor a la aplicación esperada y que elementos resultan más adecuados.
 Para ello se tendrán en cuenta las necesidades de los difentes tipos de usuarios.
