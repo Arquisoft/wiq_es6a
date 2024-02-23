@@ -1,0 +1,8 @@
+[[section-design-decisions]]
+== Design Decisions
+
+[options="header",cols="1,4"]
+|===
+|Decision|Explanation
+|  |
+|===
