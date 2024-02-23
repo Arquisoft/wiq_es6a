@@ -4,5 +4,6 @@
 [options="header",cols="1,4"]
 |===
 |Decision|Explanation
-|  |
+| Priorizar usabilidad y disponibilidad frente a seguridad | Tratándose de una aplicación de ocio que no gestiona datos personales importantes, resultarían más problemáticos una caída del acceso al servicio o un fallo en su funcionamiento que un acceso no autorizado a los pocos datos que guarda.
+| Uso de arquitectura de microservicios | Simplifica la implementación de las distintas partes del programa, además de contar con algunos de los microservicios ya hechos en el material desde el que hemos partido.
 |===
