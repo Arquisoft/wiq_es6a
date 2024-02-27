@@ -1,11 +1,11 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-technical-risks]]
-== Risks and Technical Debts
+== Riesgos y Deudas Técnicas
 
 A continuación, se presentan en formato tabla los riesgos y posibles deudas técnicas consideredas por el equipo de desarrollo.
 
-.Development Team Risks
+.Riesgos del ámbito de Desarrollo
 |===
 |Riesgo|Descripción|Medida Preventiva
 
@@ -23,7 +23,7 @@ A continuación, se presentan en formato tabla los riesgos y posibles deudas té
 
 |===
 
-.Software Risks
+.Riesgos del ámbito de Software
 |===
 |Riesgo|Descripción|Medida Preventiva
 
