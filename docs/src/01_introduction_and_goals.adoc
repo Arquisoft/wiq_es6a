@@ -24,7 +24,8 @@ Segun ISO/IEC 25010
 |Objetivo de Calidad|Realización|Prioridad
 | Usabilidad | Para que la aplicación sea usable se buscará mantener un diseño uniforme y basarse en la predictibilidad para que el aprendizaje de uso de la aplicación sea sencillo y para que no se complique la experiencia del usuario.| 5
 | Testabilidad | Se realizarán pruebas lo más exhaustivas posible para asegurar el correcto funcionamiento de todos los servicios presentes en la aplicación. | 4
-| Fiabilidad | Se buscará que el uso de recursos dentro de la aplicación sea lo más optimizado posible para que el funcionamiento de la aplicación no se vea afectado en velocidad o eficacia. | 4
+| Rendimiento | Una de las prioridades del proyecto es que funcione en tiempo y forma y que no se generen grandes pantallas de carga y que el jugador no tenga que esperar demasiado para poder jugar cómodamente. | 4
+| Fiabilidad | Se buscará que el uso de recursos dentro de la aplicación sea lo más optimizado posible para que el funcionamiento de la aplicación no se vea afectado en velocidad o eficacia. | 3
 | Seguridad | Se debe buscar cumplir unos mínimos para que no sea fácil el acceso a cuentas que no te pertenecen y que la información de los usuarios no quede fácilmente expuesta. Pero no es uno de los objetivos clave. | 1
 |===
 
