@@ -1,13 +1,13 @@
 [[section-system-scope-and-context]]
-== System Scope and Context
+== Alcance y Contexto del Sistema
 
-=== Business Context
+=== Contexto de Negocio
 
 :imagesdir: ../images
 image::business.png[]
 
 
-=== Technical Context
+=== Contexto Técnico
 
 :imagesdir: ../images
 image::technical.png[]
