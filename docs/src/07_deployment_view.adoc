@@ -3,11 +3,11 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-deployment-view]]
 
 
-== Deployment View
+== Vista de implementacion
 
 [role="arc42help"]
 
-=== Infrastructure Level 1
+=== Nivel 1 de infraestructura
 
 [role="arc42help"]
 
@@ -17,7 +17,6 @@ Motivation::
 
 La aplicación constará de varios microservicios que se encargarán de las distintas tareas, habrá un microservicio para cada requisito de alto nivel. En función de las tareas que realicen algunos estarán en contacto con una base de datos no relacional MongoDB, otros realizarán consultas sobre Wikidata para extraer información y otros se encargarán de la comunicación con el usuario de la aplicación.
 
-Mapping of Building Blocks to Infrastructure::
 [cols="1,2", stripes = even]
 |===
 |Nodo   |Descripción
@@ -28,14 +27,12 @@ Mapping of Building Blocks to Infrastructure::
 |===
 
 
-=== Infrastructure Level 2
+=== Nivel 2 de infraestructura
 
 [role="arc42help"]
 
 image::07-Deployment-View-Diagram2.png[]
 
-
-Mapping of Building Blocks to Infrastructure::
 [cols="1,2", stripes = even]
 |===
 |GitHub   |Es un servicio de control de versiones, es la plataforma que utilizaremos para almacenar el código fuente de nuestra aplicación

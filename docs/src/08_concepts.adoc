@@ -1,31 +1,24 @@
 ifndef::imagesdir[:imagesdir: ../images]
 
 [[section-concepts]]
-== Cross-cutting Concepts
+== Conceptos transversales
 
 
 [role="arc42help"]
 
-=== Usabilidad
+=== Arquitectura empleada
 
-Queremos que la aplicación sea fácil de emplear para nuestros usuarios. Esto puede mermar otras características como la seguridad pero consideramos prioritaria la usabilidad.
-
-
-=== Fiabilidad
-
-La aplicación debe ser fiable. Para ello implementaremos métodos que permitan a los usuarios seguir accediendo a la aplicación a pesar de que algunos de los servicios externos no funcionen, como la generación de preguntas en bloque para evitar que una caida de Wikidata repercuta en nuestros usuarios.
+El sistema contará con una arquitectura basada en microservicios. Dividiremos la aplicación en partes independientes en función de los requisitos de alto nivel de forma que sea sencillo modificar los elementos existentes y añadir nuevos.
 
 
+=== Interfaz de usuario
+
+La aplicación constará de un ventana "inicio de sesión o registro" que nos permitirá acceder a una vista inicial "Home" desde la que se podrá tanto jugar una partida (opción que nos llevaría a una vista nueva donde vemos el juego), como acceder a las distintas vistas "Perfil de usuario" y "Busqueda de usuarios". Además desde la vista de "Perfil de usuario" podremos acceder a una nueva vista para ver el historial del usuario. A medida que se desarrolle la aplicación se adjuntarán imagenes a este apartado para mostrarlo de forma gráfica.
 === Testabilidad
 
 La aplación debe ser testeable. Queremos implementar tests que nos permitan comprobar el correcto funcionamiento de la misma.
 
 
-=== Seguridad
+=== Modelo de dominio 
 
-La seguridad no va a ser una prioridad a la hora de desarrollar nuestra aplicación. Si bien sí que queremos tener al menos un nivel bajo de seguridad para que las contraseñas y cuentas de los usuarios no peligren, no queremos implementar metodos de seguridad que reduzgan la usabilidad de la aplicación.
-
-
-=== Disponibilidad
-
-No es un objetivo prioritario pero de ser posible, la aplicación debe estar disponible todo el tiempo posible.
+Agregar diagrama despues de consultar con el resto del grupo
