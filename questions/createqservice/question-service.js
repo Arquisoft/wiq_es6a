@@ -3,7 +3,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const bodyParser = require('body-parser');
-const User = require('./question-model')
+const User = require('./question-model');
+
+import SPARQLQueryDispatcher from '../SPARQLQueryDispatcher.js';
 
 const app = express();
 const port = 8001;
@@ -16,34 +18,31 @@ const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/userdb';
 mongoose.connect(mongoUri);
 
 
+const preguntas = new Map();
+setPreguntas();
 
-// Function to validate required fields in the request body
-function validateRequiredFields(req, requiredFields) {
-    for (const field of requiredFields) {
-      if (!(field in req.body)) {
-        throw new Error(`Missing required field: ${field}`);
-      }
-    }
-}
+const endpointUrl = 'https://query.wikidata.org/sparql';
+const queryDispatcher = new SPARQLQueryDispatcher( endpointUrl );
 
-app.post('/adduser', async (req, res) => {
+app.post('/question', async (req, res) => {
     try {
-        // Check if required fields are present in the request body
-        validateRequiredFields(req, ['username', 'password']);
-
-        // Encrypt the password before saving it
-        const hashedPassword = await bcrypt.hash(req.body.password, 10);
-
-        const newUser = new User({
-            username: req.body.username,
-            password: hashedPassword,
-        });
-
-        await newUser.save();
-        res.json(newUser);
+        getAtributo();
     } catch (error) {
         res.status(400).json({ error: error.message }); 
     }});
+
+function setPreguntas(){
+    preguntas.set("capital","Cuál es la capital de");
+}
+
+function getAtributo(){
+    const sparqlQuery = `SELECT ?capitalLabel WHERE {
+  ?capital wdt:P31 wd:Q6256;
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}`;
+
+    queryDispatcher.query( sparqlQuery ).then( console.log );
+}
 
 const server = app.listen(port, () => {
   console.log(`User Service listening at http://localhost:${port}`);
