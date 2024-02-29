@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3a70bc3-1f0b-4042-a99e-e960a2b1db01" name="Changes" comment="resolución de problemas y modelo de preguntas">
+    <list default="true" id="f3a70bc3-1f0b-4042-a99e-e960a2b1db01" name="Changes" comment="planteamiento sistema de preguntas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions/createqservice/question-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/questions/createqservice/question-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/components/GamesPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/GamesPanel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +74,17 @@
       <option name="presentableId" value="Default" />
       <updated>1709024704264</updated>
       <workItem from="1709024705608" duration="479000" />
-      <workItem from="1709226858104" duration="1475000" />
+      <workItem from="1709226858104" duration="5237000" />
     </task>
+    <task id="LOCAL-00001" summary="planteamiento sistema de preguntas">
+      <option name="closed" value="true" />
+      <created>1709228469223</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709228469223</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +103,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="resolución de problemas y modelo de preguntas" />
-    <option name="LAST_COMMIT_MESSAGE" value="resolución de problemas y modelo de preguntas" />
+    <MESSAGE value="planteamiento sistema de preguntas" />
+    <option name="LAST_COMMIT_MESSAGE" value="planteamiento sistema de preguntas" />
   </component>
 </project>
