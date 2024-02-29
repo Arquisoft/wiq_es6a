@@ -1,9 +1,9 @@
 [[section-solution-strategy]]
-== Solution Strategy
+== Solución Estratégica
 
 |===
-| *_Restricciones de arquitectura_* | *_Descripción_*
-| *_Solución Estratégica_* | Elaboramos una aplicacíon, basada en Saber y Ganar, en la que los concursantes pueden registrarse para participar, donde en cada ronda tendran que responder varias preguntas, de distintas categorias, donde se guardará un registro con las preguntas respondidas por el usuario y podrá revisar su histórico, también podrá ver que preguntas acerto y cuales falló.
+| *_Solución Estratégica_* | *_Descripción_*
+| *_Definición_* | Elaboramos una aplicacíon, basada en Saber y Ganar, en la que los concursantes pueden registrarse para participar, donde en cada ronda tendran que responder varias preguntas, de distintas categorias, donde se guardará un registro con las preguntas respondidas por el usuario y podrá revisar su histórico, también podrá ver que preguntas acerto y cuales falló.
 
 | *_Tecnologías usadas para llevar a cabo_* |
 
