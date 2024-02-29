@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react';
 
 
-const Timer=()=>{
+export const Timer=()=>{
     const [time,setTime]=useState(50);
     useEffect(() => {
         const dec=()=>{
