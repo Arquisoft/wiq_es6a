@@ -32,8 +32,13 @@ app.post('/question', async (req, res) => {
     }});
 
 function setPreguntas(){
-    preguntas.set("capital","Cuál es la capital de");
-}
+    preguntas.set("capital","Cuál es la capital de");       //Tipo: capital de país, Atributo: el país, Ejemplo: ¿Cuál es la capital de Italia?
+    preguntas.set("oscar","En qué año ganó el oscar");      //Tipo: premios oscar, Atributo: la película que lo ganó, Ejemplo: ¿En qué año ganó el oscar Gladiator?
+    preguntas.set("pintura","Quién pintó");                 //Tipo: pintura, Atributo: el nombre del cuadro, Ejemplo: ¿Quién pintó la noche estrellada?
+    preguntas.set("eventoHistorico","En qué año sucedió");  //Tipo: evento histórico, Atributo: el evento histórico, Ejemplo: ¿En qué año sucedió la revolución francesa?
+    preguntes.set("premioDeportivo","Quién ganó");          //Tipo: premio deportivo, Atributo: el premio que se ganó, Ejemplo: ¿Quién ganó el balón de oro?
+    preguntas.set("descubrimiento", "Quién descubrió");     //Tipo: descubrimiento, Atributo: lo que se descubrió, Ejemplo: ¿Quién descubrió la gravedad?
+  }
 
 function getAtributo(){
     const sparqlQuery = `SELECT ?capitalLabel WHERE {
