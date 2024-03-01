@@ -1,42 +1,14 @@
-ifndef::imagesdir[:imagesdir: ../images]
-
 [[section-glossary]]
 == Glossary
 
-[role="arc42help"]
-****
-.Contents
-The most important domain and technical terms that your stakeholders use when discussing the system.
-
-You can also see the glossary as source for translations if you work in multi-language teams.
-
-.Motivation
-You should clearly define your terms, so that all stakeholders
-
-* have an identical understanding of these terms
-* do not use synonyms and homonyms
-
-
-.Form
-
-A table with columns <Term> and <Definition>.
-
-Potentially more columns in case you need translations.
-
-
-.Further Information
-
-See https://docs.arc42.org/section-12/[Glossary] in the arc42 documentation.
-
-****
-
-[cols="e,2e" options="header"]
+[options="header"]
 |===
-|Term |Definition
+| Término      | Definición
+| Backend | Parte "interna" de la arquitectura de la aplicación, que contiene la lógica que permite la propia funcionalidad del programa y está oculta a los ojos del usuario.
+| Base de datos | Sistema electrónico que contiene un conjunto de datos e información organizada y facilita el acceso y la gestión y manipulación de los mismos.
+| Frontend | Parte "externa" de la arquitectura de la aplicación que incluye la interfaz de usuario y los elementos visuales que se muestran de cara al público.
+| JSON     | Formato de texto diseñado para el almacenamiento e intercambio de datos que forma parte del sistema de JavaScript.
+| Microservicios | Cada uno de los segmentos de la aplicación que ofrecen su propio servicio y funcionalidad específicos, ejecutándose en sus propios procesos y comunicándose entre ellos.
+| Testabilidad | Cualidad de un producto software que permite que sea probado debidamente.
 
-|<Term-1>
-|<definition-1>
-
-|<Term-2>
-|<definition-2>
 |===
