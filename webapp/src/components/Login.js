@@ -2,9 +2,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Container, Typography, TextField, Button, Snackbar } from '@mui/material';
-import Home from "./Home";
+import AddAnswer from './AddAnswer';
+import GetAnswer from './GetAnswer';
 
-const Login = ({sendLogin, sendUsername}) => {
+const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -13,7 +14,7 @@ const Login = ({sendLogin, sendUsername}) => {
   const [openSnackbar, setOpenSnackbar] = useState(false);
 
   const apiEndpoint = process.env.REACT_APP_API_ENDPOINT || 'http://localhost:8000';
-  sendLogin(loginSuccess);
+
   const loginUser = async () => {
     try {
       const response = await axios.post(`${apiEndpoint}/login`, { username, password });
@@ -23,8 +24,7 @@ const Login = ({sendLogin, sendUsername}) => {
 
       setCreatedAt(userCreatedAt);
       setLoginSuccess(true);
-      sendLogin(loginSuccess);
-      sendUsername(username);
+
       setOpenSnackbar(true);
     } catch (error) {
       setError(error.response.data.error);
@@ -37,7 +37,18 @@ const Login = ({sendLogin, sendUsername}) => {
 
   return (
     <Container component="main" maxWidth="xs" sx={{ marginTop: 4 }}>
-
+      {loginSuccess ? (
+        <div>
+          <Typography component="h1" variant="h5" sx={{ textAlign: 'center' }}>
+            Hello {username}!
+          </Typography>
+          <Typography component="p" variant="body1" sx={{ textAlign: 'center', marginTop: 2 }}>
+            Your account was created on {new Date(createdAt).toLocaleDateString()}.
+          </Typography>
+          <AddAnswer />
+          <GetAnswer />
+        </div>
+      ) : (
         <div>
           <Typography component="h1" variant="h5">
             Login
@@ -65,20 +76,9 @@ const Login = ({sendLogin, sendUsername}) => {
             <Snackbar open={!!error} autoHideDuration={6000} onClose={() => setError('')} message={`Error: ${error}`} />
           )}
         </div>
+      )}
     </Container>
   );
 };
 
 export default Login;
-
-
-// (
-//     <div>
-//       <Typography component="h1" variant="h5" sx={{ textAlign: 'center' }}>
-//         Hello {username}!
-//       </Typography>
-//       <Typography component="p" variant="body1" sx={{ textAlign: 'center', marginTop: 2 }}>
-//         Your account was created on {new Date(createdAt).toLocaleDateString()}.
-//       </Typography>
-//     </div>
-// )

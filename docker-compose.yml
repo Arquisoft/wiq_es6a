@@ -39,6 +39,20 @@ services:
     environment:
       MONGODB_URI: mongodb://mongodb:27017/userdb
 
+  answerservice:
+    container_name: answerservice-${teamname:-defaultASW}
+    image: ghcr.io/arquisoft/wiq_es6a/answerservice:latest
+    profiles: ["dev", "prod"]
+    build: ./questions/answerservice
+    depends_on:
+      - mongodb
+    ports:
+      - "8004:8004"
+    networks:
+      - mynetwork
+    environment:
+      MONGODB_URI: mongodb://mongodb:27017/answerdb
+
   gatewayservice:
     container_name: gatewayservice-${teamname:-defaultASW}
     image: ghcr.io/arquisoft/wiq_es6a/gatewayservice:latest
@@ -48,13 +62,15 @@ services:
       - mongodb
       - userservice
       - authservice
+      - answerservice
     ports:
       - "8000:8000"
     networks:
       - mynetwork
     environment:
-      AUTH_SERVICE_URL: http://authservice:8002
       USER_SERVICE_URL: http://userservice:8001
+      AUTH_SERVICE_URL: http://authservice:8002
+      ANSWER_SERVICE_URL: http://answerservice:8004
 
   webapp:
     container_name: webapp-${teamname:-defaultASW}
