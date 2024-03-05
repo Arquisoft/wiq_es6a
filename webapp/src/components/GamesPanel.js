@@ -6,8 +6,11 @@ import axios from 'axios';
 
 function Game({ title }) {
     const apiEndpoint = process.env.REACT_APP_API_ENDPOINT || 'http://localhost:8000';
+
+    var response = "No response.";
+
     const question = async () => {
-        const response = await axios.post(`${apiEndpoint}/question`);
+        response = await axios.post(`${apiEndpoint}/question`);
     };
 
     return (
@@ -15,7 +18,7 @@ function Game({ title }) {
             <Paper sx={{ p: 2, bgcolor: 'red' }}>
                 <Typography variant="h6">{title}</Typography>
                 <Button variant="contained" color="primary" onClick={question}>
-                    Question
+                    Question : {response}
                 </Button>
             </Paper>
         </Grid>
