@@ -1,4 +1,4 @@
-// src/components/Login.js
+// src/components/GetAnswer.js
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Container, Typography, TextField, Button, Snackbar } from '@mui/material';
@@ -14,11 +14,12 @@ const GetAnswer = () => {
   const apiEndpoint = process.env.REACT_APP_API_ENDPOINT || 'http://localhost:8000';
   const getAnswer = async () => {
       const type = 'capital';
-      const value = 'Francia';
-      console.log('GetAnswer');
+      const attribute = 'Russia';
+      console.log('getAnswer');
       try {  
-        const response = await axios.post(`${apiEndpoint}/getanswer`, { type, value } );
-        console.log('La ' + response.data.type + ' de ' + response.data.value + ' es...');
+        const response = await axios.post(`${apiEndpoint}/getanswer`, { type, attribute } );
+        console.log('La ' + response.data.type + ' de ' + response.data.attribute + ' es ' + response.data.right);
+        console.log('y ' + response.data.wrong1 + ', ' + response.data.wrong2 + ' y ' + response.data.wrong3 + ' no lo son ;-)');
         setOpenSnackbar(true);
       } catch (error) {
         setError(error.response.data.error);

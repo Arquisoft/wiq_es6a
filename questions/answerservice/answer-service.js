@@ -32,7 +32,11 @@ app.post('/addanswer', async (req, res) => {
         // const hashedPassword = await bcrypt.hash(req.body.password, 10);
         const newAnswer = new Answer({
             type: req.body.type,
-            value: req.body.value,
+            attribute: req.body.attribute,
+            right: req.body.right,
+            wrong1: req.body.wrong1,
+            wrong2: req.body.wrong2,
+            wrong3: req.body.wrong3,
         });
 
         await newAnswer.save();
@@ -45,17 +49,18 @@ app.post('/addanswer', async (req, res) => {
 app.post('/getanswer', async (req, res) => {
   try {
     // Check if required fields are present in the request body
-    validateRequiredFields(req, ['type', 'value']);
+    validateRequiredFields(req, ['type', 'attribute']);
 
-    const { type, value } = req.body;
+    const { type, attribute } = req.body;
     
     // Find the answer by type in the database
-    const answer = await Answer.findOne({ value });
+    const answer = await Answer.findOne({ attribute });
 
     // Check if the answer exists
     if (answer) {
       // Respond with the answer information
-      res.json({ type: answer.type, value: answer.value });
+      res.json({ type: answer.type, attribute: answer.attribute, right: answer.right, 
+                 wrong1: answer.wrong1, wrong2: answer.wrong2, wrong3: answer.wrong3, });
     } else {
       res.status(401).json({ error: 'Answer not found' });
     } 
