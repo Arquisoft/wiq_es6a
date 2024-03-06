@@ -3,6 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const Answer = require('./answer-model')
+const SPARQLQueryDispatcher = require("../SPARQLQueryDispatcher");
 
 const app = express();
 const port = 8004;
@@ -13,6 +14,10 @@ app.use(bodyParser.json());
 // Connect to MongoDB
 const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/answerdb';
 mongoose.connect(mongoUri);
+
+
+const endpointUrl = 'https://query.wikidata.org/sparql';
+const queryDispatcher = new SPARQLQueryDispatcher(endpointUrl);
 
 // Function to validate required fields in the request body
 function validateRequiredFields(req, requiredFields) {
@@ -33,6 +38,10 @@ app.post('/addanswer', async (req, res) => {
         const newAnswer = new Answer({
             type: req.body.type,
             value: req.body.value,
+            // rightAnswer: req.body.rightAnswer,
+            // wrongAnswer1: req.body.wrongAnswer1,
+            // wrongAnswer2: req.body.wrongAnswer2,
+            // wrongAnswer3: req.body.wrongAnswer3,
         });
 
         await newAnswer.save();
@@ -46,6 +55,24 @@ app.post('/getanswer', async (req, res) => {
   try {
     // Check if required fields are present in the request body
     validateRequiredFields(req, ['type', 'value']);
+
+      const sparqlQueryRightAnswer = `SELECT DISTINCT ?item ?itemLabel                                                                  
+                  WHERE {
+                  ?item wdt:P1376 wd:Q142. # capitalof France
+                  ?item wdt:P31 wd:Q5119.
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}`;
+
+      const sparqlQueryWrongAnswers = `SELECT ?capitalLabel WHERE {
+            ?capital wdt:P31 wd:Q6256;
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}`;
+
+      const listaCapitales=await queryDispatcher.query( sparqlQueryWrongAnswers );
+
+      const respuestaCorrecta=await queryDispatcher.query( sparqlQueryRightAnswer );
+
+      queryDispatcher.query( sparqlQueryRightAnswer ).then( console.log );
+
+      queryDispatcher.query( sparqlQueryWrongAnswers ).then( console.log );
 
     const { type, value } = req.body;
     

@@ -5,24 +5,23 @@ const bcrypt = require('bcrypt');
 const bodyParser = require('body-parser');
 const User = require('./question-model');
 
-import SPARQLQueryDispatcher from '../SPARQLQueryDispatcher.js';
-
 const app = express();
 const port = 8001;
 
 // Middleware to parse JSON in request body
 app.use(bodyParser.json());
-
+const queryDispatcher = new SPARQLQueryDispatcher( endpointUrl );
 // Connect to MongoDB
 const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/userdb';
 mongoose.connect(mongoUri);
 
+const SPARQLQueryDispatcher=require("../SPARQLQueryDispatcher");
 
 const preguntas = new Map();
 setPreguntas();
 
 const endpointUrl = 'https://query.wikidata.org/sparql';
-const queryDispatcher = new SPARQLQueryDispatcher( endpointUrl );
+
 
 app.post('/question', async (req, res) => {
     try {

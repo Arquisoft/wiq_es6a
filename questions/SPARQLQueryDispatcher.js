@@ -10,3 +10,5 @@ class SPARQLQueryDispatcher {
         return fetch( fullUrl, { headers } ).then( body => body.json() );
     }
 }
+
+module.exports = SPARQLQueryDispatcher

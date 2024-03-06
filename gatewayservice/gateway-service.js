@@ -59,7 +59,8 @@ app.post('/getanswer', async (req, res) => {
     const answerResponse = await axios.post(answerServiceUrl+'/getanswer', req.body);
     res.json(answerResponse.data);
   } catch (error) {
-    res.status(error.response.status).json({ error: error.response.data.error });
+    //console.log(error);
+    res.status(error.response.status).json({ error: error.response.data.error});
   }
 });
 

@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3a70bc3-1f0b-4042-a99e-e960a2b1db01" name="Changes" comment="planteamiento sistema de preguntas">
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/components/GamesPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/GamesPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatewayservice/gateway-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayservice/gateway-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions/SPARQLQueryDispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/questions/SPARQLQueryDispatcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions/answerservice/answer-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/questions/answerservice/answer-model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions/answerservice/answer-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/questions/answerservice/answer-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions/createqservice/question-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/questions/createqservice/question-service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,27 +47,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "generacionPreguntasSara",
-    "javascript.nodejs.core.library.configured.version": "20.11.1",
-    "javascript.nodejs.core.library.typings.version": "20.11.20",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/saraf/OneDrive/Escritorio/Documentos/Universidad/32/ASW/questions/createqservice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.answer-model.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.answer-service.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.gateway-service.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.11.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.11.24&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Usuario/Desktop/SDI Lab/Trabajo-Spring/TrabajoSDI&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\saraf\OneDrive\Escritorio\Documentos\Universidad\32\ASW\questions\createqservice" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-f644763e9732-24fca987" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -75,6 +89,10 @@
       <updated>1709024704264</updated>
       <workItem from="1709024705608" duration="479000" />
       <workItem from="1709226858104" duration="5237000" />
+      <workItem from="1709625363114" duration="95000" />
+      <workItem from="1709665344939" duration="1188000" />
+      <workItem from="1709666805993" duration="600000" />
+      <workItem from="1709711862431" duration="5724000" />
     </task>
     <task id="LOCAL-00001" summary="planteamiento sistema de preguntas">
       <option name="closed" value="true" />
