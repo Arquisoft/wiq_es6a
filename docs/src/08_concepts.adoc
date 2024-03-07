@@ -6,19 +6,22 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 [role="arc42help"]
 
+
+=== Modelo de dominio 
+
+image::08-Modelo-De-Dominio.png[]
+
 === Arquitectura empleada
 
 El sistema contará con una arquitectura basada en microservicios. Dividiremos la aplicación en partes independientes en función de los requisitos de alto nivel de forma que sea sencillo modificar los elementos existentes y añadir nuevos.
 
 
-=== Interfaz de usuario
+=== Navegabilidad de la aplicación
 
 La aplicación constará de un ventana "inicio de sesión o registro" que nos permitirá acceder a una vista inicial "Home" desde la que se podrá tanto jugar una partida (opción que nos llevaría a una vista nueva donde vemos el juego), como acceder a las distintas vistas "Perfil de usuario" y "Busqueda de usuarios". Además desde la vista de "Perfil de usuario" podremos acceder a una nueva vista para ver el historial del usuario. A medida que se desarrolle la aplicación se adjuntarán imagenes a este apartado para mostrarlo de forma gráfica.
-=== Testabilidad
-
-La aplación debe ser testeable. Queremos implementar tests que nos permitan comprobar el correcto funcionamiento de la misma.
 
 
-=== Modelo de dominio 
+=== Interfaz de usuario
 
-Agregar diagrama despues de consultar con el resto del grupo
+Este apartado se irá actualizando con imagenes de las vistas finales de la aplicación a medida que se vayan implementando.
+
