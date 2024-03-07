@@ -21,6 +21,9 @@ mongoose.connect(mongoUri);
 const preguntas = new Map();
 setPreguntas();
 
+const queryMap = new Map();
+setQueries();
+
 const endpointUrl = 'https://query.wikidata.org/sparql';
 const queryDispatcher = new SPARQLQueryDispatcher( endpointUrl );
 
@@ -38,13 +41,61 @@ function setPreguntas(){
     preguntas.set("eventoHistorico","En qué año sucedió");  //Tipo: evento histórico, Atributo: el evento histórico, Ejemplo: ¿En qué año sucedió la revolución francesa?
     preguntes.set("premioDeportivo","Quién ganó");          //Tipo: premio deportivo, Atributo: el premio que se ganó, Ejemplo: ¿Quién ganó el balón de oro?
     preguntas.set("descubrimiento", "Quién descubrió");     //Tipo: descubrimiento, Atributo: lo que se descubrió, Ejemplo: ¿Quién descubrió la gravedad?
+    preguntas.set("invencion","Quién inventó");             //Tipo: invencion, Atributo: el invento, Ejemplo: ¿Quién inventó el teléfono?
   }
 
+function setQueries()
+{
+  queryMap.set("capital", `SELECT ?capitalLabel WHERE {
+    ?capital wdt:P31 wd:Q6256; SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  }`);
+  
+  queryMap.set("oscar", `SELECT ?filmLabel WHERE {
+    ?film wdt:P31 wd:Q11424;
+          wdt:P166 wd:Q102427.
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],es". }
+  }`);
+
+  queryMap.set("pintura", `SELECT ?cuadro ?cuadroLabel ?artista ?artistaLabel WHERE {
+    ?cuadro wdt:P31 wd:Q3305213;          # Esta parte devuelve los cuadros
+            wdt:P170 ?artista.            # Esta devuelve el artista creador del cuadro para asegurarse que tenga un creador y por tanto haya una respuesta valida
+    OPTIONAL { ?cuadro wdt:P136 ?obraDestacada. }
+    FILTER EXISTS { ?cuadro wdt:P136 ?obraDestacada. }
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  }
+  LIMIT 100`);
+
+  queryMap.set("eventoHistorico", `SELECT ?eventoHistorico ?eventoHistoricoLabel WHERE {
+    ?eventoHistorico wdt:P31 wd:Q198.
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],es". }
+  }`);
+
+  queryMap.set("premioDeportivo", `SELECT ?premioDeportivo ?premioDeportivoLabel WHERE {
+    ?premioDeportivo wdt:P31 wd:Q15229207.
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  }`);
+  
+  queryMap.set("descubrimiento", `SELECT ?descubrimiento ?descubrimientoLabel
+  WHERE {
+    ?descubrimiento wdt:P31 wd:Q12772819.  # Instancia de descubrimiento científico
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  }
+  LIMIT 100`);
+
+  queryMap.set("invencion", `SELECT ?invencion ?invencionLabel
+  WHERE {
+    ?invencion wdt:P31 wd:Q14208553.
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  }
+  LIMIT 100`);
+
+}
+
 function getAtributo(){
+
     const sparqlQuery = `SELECT ?capitalLabel WHERE {
-  ?capital wdt:P31 wd:Q6256;
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-}`;
+      ?capital wdt:P31 wd:Q6256; SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+    }`;
 
     queryDispatcher.query( sparqlQuery ).then( console.log );
 }
