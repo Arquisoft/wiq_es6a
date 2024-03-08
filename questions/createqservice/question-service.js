@@ -21,12 +21,15 @@ mongoose.connect(mongoUri);
 const preguntas = new Map();
 setPreguntas();
 
+const queryMap = new Map();
+setQueries();
+
 const endpointUrl = 'https://query.wikidata.org/sparql';
 const queryDispatcher = new SPARQLQueryDispatcher( endpointUrl );
 
 app.post('/question', async (req, res) => {
     try {
-        getAtributo();
+        getAtributo("capital");
     } catch (error) {
         res.status(400).json({ error: error.message }); 
     }});
@@ -35,13 +38,24 @@ function setPreguntas(){
     preguntas.set("capital","Cuál es la capital de");
 }
 
-function getAtributo(){
-    const sparqlQuery = `SELECT ?capitalLabel WHERE {
-  ?capital wdt:P31 wd:Q6256;
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-}`;
+function setQueries()
+{
+  queryMap.set("capital", 'SELECT ?capitalLabel WHERE {?capital wdt:P31 wd:Q6256; SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}');
+}
 
-    queryDispatcher.query( sparqlQuery ).then( console.log );
+function getAtributo(tipo)
+{
+  const query = queryMap.get(tipo);
+
+  const rawData = queryDispatcher.query(query);
+
+  const typeName = Object.keys(rawData[0]);
+
+  const attribute = rawData[ rawData.length * Math.random() << 0 ][ typeName[0] ];
+
+  console.log(attribute);
+
+  return attribute;
 }
 
 const server = app.listen(port, () => {
