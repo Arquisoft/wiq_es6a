@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3a70bc3-1f0b-4042-a99e-e960a2b1db01" name="Changes" comment="planteamiento sistema de preguntas">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+    <list default="true" id="f3a70bc3-1f0b-4042-a99e-e960a2b1db01" name="Changes" comment="Planteamiento sistema de preguntas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayservice/gateway-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayservice/gateway-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions/SPARQLQueryDispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/questions/SPARQLQueryDispatcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions/answerservice/answer-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/questions/answerservice/answer-model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions/answerservice/answer-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/questions/answerservice/answer-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/questions/createqservice/question-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/questions/createqservice/question-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/components/GamesPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/GamesPanel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +89,10 @@
       <workItem from="1709625363114" duration="95000" />
       <workItem from="1709665344939" duration="1188000" />
       <workItem from="1709666805993" duration="600000" />
-      <workItem from="1709711862431" duration="5724000" />
+      <workItem from="1709711862431" duration="6401000" />
+      <workItem from="1709723707049" duration="793000" />
+      <workItem from="1709724810061" duration="1443000" />
+      <workItem from="1709890225383" duration="250000" />
     </task>
     <task id="LOCAL-00001" summary="planteamiento sistema de preguntas">
       <option name="closed" value="true" />
@@ -102,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709228469223</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Planteamiento sistema de preguntas">
+      <option name="closed" value="true" />
+      <created>1709719888771</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709719888771</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +130,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="resolución de problemas y modelo de preguntas" />
     <MESSAGE value="planteamiento sistema de preguntas" />
-    <option name="LAST_COMMIT_MESSAGE" value="planteamiento sistema de preguntas" />
+    <MESSAGE value="Planteamiento sistema de preguntas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Planteamiento sistema de preguntas" />
   </component>
 </project>
