@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Container, Typography, TextField, Button, Snackbar } from '@mui/material';
-import AddAnswer from './AddAnswer';
-import GetAnswer from './GetAnswer';
+import AddQuestion from './AddQuestion';
+import GetQuestion from './GetQuestion';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -45,8 +45,8 @@ const Login = () => {
           <Typography component="p" variant="body1" sx={{ textAlign: 'center', marginTop: 2 }}>
             Your account was created on {new Date(createdAt).toLocaleDateString()}.
           </Typography>
-          <AddAnswer />
-          <GetAnswer />
+          <AddQuestion />
+          <GetQuestion />
         </div>
       ) : (
         <div>
