@@ -29,7 +29,7 @@ const queryDispatcher = new SPARQLQueryDispatcher( endpointUrl );
 
 app.post('/question', async (req, res) => {
     try {
-        getAtributo();
+        getAtributo("capital");
     } catch (error) {
         res.status(400).json({ error: error.message }); 
     }});
@@ -91,13 +91,19 @@ function setQueries()
 
 }
 
-function getAtributo(){
+function getAtributo(tipo)
+{
+  const query = queryMap.get(tipo);
 
-    const sparqlQuery = `SELECT ?capitalLabel WHERE {
-      ?capital wdt:P31 wd:Q6256; SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-    }`;
+  const rawData = queryDispatcher.query(query);
 
-    queryDispatcher.query( sparqlQuery ).then( console.log );
+  const typeName = Object.keys(rawData[0]);
+
+  const attribute = rawData[ rawData.length * Math.random() << 0 ][ typeName[0] ];
+
+  console.log(attribute);
+
+  return attribute;
 }
 
 const server = app.listen(port, () => {
