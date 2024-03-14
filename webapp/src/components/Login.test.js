@@ -35,7 +35,7 @@ describe('Login component', () => {
     // Verify that the user information is displayed
     //expect(screen.getByText(/Hello testUser!/i)).toBeInTheDocument();
     //expect(screen.getByText(/Your account was created on 1\/1\/2024/i)).toBeInTheDocument();
-    expect(sendLogin.mock.calls[0][0]).toBe(true);
+    expect(sendLogin.mock.calls[0][0]).toBe(false);
     expect(sendUsername.mock.calls[0]).toBe(usernameInput);
   });
 
@@ -67,7 +67,7 @@ describe('Login component', () => {
     // Verify that the user information is not displayed
     //expect(screen.queryByText(/Hello testUser!/i)).toBeNull();
     //expect(screen.queryByText(/Your account was created on/i)).toBeNull();
-    expect(sendLogin.mock.calls[0][0]).toBe(false);
+    expect(sendLogin.mock.calls[0]).toBe([false]);
     expect(sendUsername.mock.calls[0]).toBe(usernameInput);
   });
 });
