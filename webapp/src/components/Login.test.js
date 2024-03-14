@@ -4,6 +4,7 @@ import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 import Login from './Login';
 
+
 const mockAxios = new MockAdapter(axios);
 
 describe('Login component', () => {
@@ -12,7 +13,9 @@ describe('Login component', () => {
   });
 
   it('should log in successfully', async () => {
-    render(<Login />);
+    const sendLogin=jest.fn();
+    const sendUsername=jest.fn();
+    render(<Login sendLogin={sendLogin()} sendUsername={sendUsername()}/>);
 
     const usernameInput = screen.getByLabelText(/Username/i);
     const passwordInput = screen.getByLabelText(/Password/i);
@@ -20,6 +23,8 @@ describe('Login component', () => {
 
     // Mock the axios.post request to simulate a successful response
     mockAxios.onPost('http://localhost:8000/login').reply(200, { createdAt: '2024-01-01T12:34:56Z' });
+    expect(sendLogin.mock.calls[0]).toBe(true);
+    expect(sendUsername.mock.calls[0]).toBe(usernameInput);
 
     // Simulate user input
     await act(async () => {
