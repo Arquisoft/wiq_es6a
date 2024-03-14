@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3a70bc3-1f0b-4042-a99e-e960a2b1db01" name="Changes" comment="Intento arreglo de tests 23, tratando de arreglar último fallo">
+    <list default="true" id="f3a70bc3-1f0b-4042-a99e-e960a2b1db01" name="Changes" comment="Intento arreglo de tests 25, tratando de arreglar último fallo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/components/Login.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/Login.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +165,7 @@
       <workItem from="1709226858104" duration="5237000" />
       <workItem from="1710347422294" duration="1873000" />
       <workItem from="1710354071918" duration="739000" />
-      <workItem from="1710402888692" duration="24686000" />
+      <workItem from="1710402888692" duration="25971000" />
     </task>
     <task id="LOCAL-00001" summary="planteamiento sistema de preguntas">
       <option name="closed" value="true" />
@@ -358,7 +359,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710443526658</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Intento arreglo de tests 24, tratando de arreglar último fallo">
+      <option name="closed" value="true" />
+      <created>1710449260699</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1710449260699</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Intento arreglo de tests 25, tratando de arreglar último fallo">
+      <option name="closed" value="true" />
+      <created>1710449480450</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1710449480450</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,8 +393,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="resolución de problemas y modelo de preguntas" />
-    <MESSAGE value="planteamiento sistema de preguntas" />
     <MESSAGE value="Intento arreglo de tests 1" />
     <MESSAGE value="Intento arreglo de tests 2" />
     <MESSAGE value="Intento arreglo de tests 3" />
@@ -401,6 +416,8 @@
     <MESSAGE value="Intento arreglo de tests 21, tratando de arreglar último fallo" />
     <MESSAGE value="Intento arreglo de tests 22, tratando de arreglar últimos fallos" />
     <MESSAGE value="Intento arreglo de tests 23, tratando de arreglar último fallo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Intento arreglo de tests 23, tratando de arreglar último fallo" />
+    <MESSAGE value="Intento arreglo de tests 24, tratando de arreglar último fallo" />
+    <MESSAGE value="Intento arreglo de tests 25, tratando de arreglar último fallo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Intento arreglo de tests 25, tratando de arreglar último fallo" />
   </component>
 </project>
