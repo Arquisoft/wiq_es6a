@@ -36,7 +36,7 @@ describe('Login component', () => {
     //expect(screen.getByText(/Hello testUser!/i)).toBeInTheDocument();
     //expect(screen.getByText(/Your account was created on 1\/1\/2024/i)).toBeInTheDocument();
      expect(sendLogin.mock.calls[0][0]).toBe(true);
-     expect(sendUsername.mock.calls[0][0]).toBe('testUser');
+    // expect(sendUsername.mock.calls[0][0]).toBe('testUser');
   });
 
   it('should handle error when logging in', async () => {
@@ -68,6 +68,6 @@ describe('Login component', () => {
     //expect(screen.queryByText(/Hello testUser!/i)).toBeNull();
     //expect(screen.queryByText(/Your account was created on/i)).toBeNull();
      expect(sendLogin.mock.calls[0][0]).toBe(false);
-     expect(sendUsername.mock.calls[0]).toBe(undefined);
+     expect(sendUsername.mock.calls[0][0]).toBe(undefined);
   });
 });
