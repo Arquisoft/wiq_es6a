@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3a70bc3-1f0b-4042-a99e-e960a2b1db01" name="Changes" comment="Intento arreglo de tests 9">
+    <list default="true" id="f3a70bc3-1f0b-4042-a99e-e960a2b1db01" name="Changes" comment="Intento arreglo de tests 23, tratando de arreglar último fallo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +164,7 @@
       <workItem from="1709226858104" duration="5237000" />
       <workItem from="1710347422294" duration="1873000" />
       <workItem from="1710354071918" duration="739000" />
-      <workItem from="1710402888692" duration="13571000" />
+      <workItem from="1710402888692" duration="24686000" />
     </task>
     <task id="LOCAL-00001" summary="planteamiento sistema de preguntas">
       <option name="closed" value="true" />
@@ -246,7 +246,119 @@
       <option name="project" value="LOCAL" />
       <updated>1710422227821</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Intento arreglo de tests 10">
+      <option name="closed" value="true" />
+      <created>1710433245893</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1710433245893</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Intento arreglo de tests 11">
+      <option name="closed" value="true" />
+      <created>1710433813773</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1710433813773</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Intento arreglo de tests 12, encontrando todos los errores">
+      <option name="closed" value="true" />
+      <created>1710434350865</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1710434350865</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Intento arreglo de tests 13, encontrando todos los errores">
+      <option name="closed" value="true" />
+      <created>1710435157313</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1710435157313</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Intento arreglo de tests 14, encontrando todos los errores">
+      <option name="closed" value="true" />
+      <created>1710435638084</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1710435638084</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Intento arreglo de tests 15, encontrando todos los errores">
+      <option name="closed" value="true" />
+      <created>1710436250867</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1710436250867</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Intento arreglo de tests 16, encontrando todos los errores">
+      <option name="closed" value="true" />
+      <created>1710437208495</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1710437208495</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Intento arreglo de tests 17, encontrando todos los errores">
+      <option name="closed" value="true" />
+      <created>1710437884733</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1710437884733</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Intento arreglo de tests 18, encontrando todos los errores">
+      <option name="closed" value="true" />
+      <created>1710440563259</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1710440563259</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Intento arreglo de tests 19, encontrando todos los errores">
+      <option name="closed" value="true" />
+      <created>1710440999828</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1710440999828</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Intento arreglo de tests 20, encontrando todos los errores">
+      <option name="closed" value="true" />
+      <created>1710441563025</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1710441563025</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Intento arreglo de tests 21, tratando de arreglar último fallo">
+      <option name="closed" value="true" />
+      <created>1710442087052</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1710442087052</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Intento arreglo de tests 22, tratando de arreglar últimos fallos">
+      <option name="closed" value="true" />
+      <created>1710442818737</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1710442818737</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Intento arreglo de tests 23, tratando de arreglar último fallo">
+      <option name="closed" value="true" />
+      <created>1710443526658</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1710443526658</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +387,20 @@
     <MESSAGE value="Intento arreglo de tests 7" />
     <MESSAGE value="Intento arreglo de tests 8" />
     <MESSAGE value="Intento arreglo de tests 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Intento arreglo de tests 9" />
+    <MESSAGE value="Intento arreglo de tests 10" />
+    <MESSAGE value="Intento arreglo de tests 11" />
+    <MESSAGE value="Intento arreglo de tests 12, encontrando todos los errores" />
+    <MESSAGE value="Intento arreglo de tests 13, encontrando todos los errores" />
+    <MESSAGE value="Intento arreglo de tests 14, encontrando todos los errores" />
+    <MESSAGE value="Intento arreglo de tests 15, encontrando todos los errores" />
+    <MESSAGE value="Intento arreglo de tests 16, encontrando todos los errores" />
+    <MESSAGE value="Intento arreglo de tests 17, encontrando todos los errores" />
+    <MESSAGE value="Intento arreglo de tests 18, encontrando todos los errores" />
+    <MESSAGE value="Intento arreglo de tests 19, encontrando todos los errores" />
+    <MESSAGE value="Intento arreglo de tests 20, encontrando todos los errores" />
+    <MESSAGE value="Intento arreglo de tests 21, tratando de arreglar último fallo" />
+    <MESSAGE value="Intento arreglo de tests 22, tratando de arreglar últimos fallos" />
+    <MESSAGE value="Intento arreglo de tests 23, tratando de arreglar último fallo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Intento arreglo de tests 23, tratando de arreglar último fallo" />
   </component>
 </project>
