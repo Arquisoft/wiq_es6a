@@ -13,7 +13,7 @@ const Login = ({sendLogin, sendUsername}) => {
   const [openSnackbar, setOpenSnackbar] = useState(false);
 
   const apiEndpoint = process.env.REACT_APP_API_ENDPOINT || 'http://localhost:8000';
-  //sendLogin(loginSuccess);
+  sendLogin(loginSuccess);
   const loginUser = async () => {
     try {
       const response = await axios.post(`${apiEndpoint}/login`, { username, password });
@@ -23,7 +23,7 @@ const Login = ({sendLogin, sendUsername}) => {
 
       setCreatedAt(userCreatedAt);
       setLoginSuccess(true);
-      sendLogin(loginSuccess); //dmfskdskmfmfdkm
+      sendLogin(loginSuccess);
       sendUsername(username);
       setOpenSnackbar(true);
     } catch (error) {
