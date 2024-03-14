@@ -67,7 +67,7 @@ describe('Login component', () => {
     // Verify that the user information is not displayed
     //expect(screen.queryByText(/Hello testUser!/i)).toBeNull();
     //expect(screen.queryByText(/Your account was created on/i)).toBeNull();
-     expect(sendLogin.mock.calls[0]).toBe(undefined);
+     expect(sendLogin.mock.calls[0][0]).toBe(false);
      expect(sendUsername.mock.calls[0]).toBe(undefined);
   });
 });
