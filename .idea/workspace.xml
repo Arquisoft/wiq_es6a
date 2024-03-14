@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3a70bc3-1f0b-4042-a99e-e960a2b1db01" name="Changes" comment="Intento arreglo de tests 4">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f3a70bc3-1f0b-4042-a99e-e960a2b1db01" name="Changes" comment="Intento arreglo de tests 6" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,7 +162,7 @@
       <workItem from="1709226858104" duration="5237000" />
       <workItem from="1710347422294" duration="1873000" />
       <workItem from="1710354071918" duration="739000" />
-      <workItem from="1710402888692" duration="9624000" />
+      <workItem from="1710402888692" duration="9996000" />
     </task>
     <task id="LOCAL-00001" summary="planteamiento sistema de preguntas">
       <option name="closed" value="true" />
@@ -206,7 +204,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710415849498</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Intento arreglo de tests 5">
+      <option name="closed" value="true" />
+      <created>1710418786095</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710418786095</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Intento arreglo de tests 6">
+      <option name="closed" value="true" />
+      <created>1710418819331</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710418819331</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +244,8 @@
     <MESSAGE value="Intento arreglo de tests 2" />
     <MESSAGE value="Intento arreglo de tests 3" />
     <MESSAGE value="Intento arreglo de tests 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Intento arreglo de tests 4" />
+    <MESSAGE value="Intento arreglo de tests 5" />
+    <MESSAGE value="Intento arreglo de tests 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Intento arreglo de tests 6" />
   </component>
 </project>

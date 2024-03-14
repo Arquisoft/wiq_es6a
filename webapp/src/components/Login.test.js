@@ -15,7 +15,7 @@ describe('Login component', () => {
   it('should log in successfully', async () => {
     const sendLogin=jest.fn();
     const sendUsername=jest.fn();
-    render(<Login sendLogin={sendLogin()} sendUsername={sendUsername()}/>);
+    render(<Login sendLogin={sendLogin} sendUsername={sendUsername}/>);
 
     const usernameInput = screen.getByLabelText(/Username/i);
     const passwordInput = screen.getByLabelText(/Password/i);
@@ -41,7 +41,7 @@ describe('Login component', () => {
   it('should handle error when logging in', async () => {
     const sendLogin=jest.fn();
     const sendUsername=jest.fn();
-    render(<Login sendLogin={sendLogin()} sendUsername={sendUsername()}/>);
+    render(<Login sendLogin={sendLogin} sendUsername={sendUsername}/>);
 
     const usernameInput = screen.getByLabelText(/Username/i);
     const passwordInput = screen.getByLabelText(/Password/i);
