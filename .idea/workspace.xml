@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3a70bc3-1f0b-4042-a99e-e960a2b1db01" name="Changes" comment="Intento arreglo de tests 8" />
+    <list default="true" id="f3a70bc3-1f0b-4042-a99e-e960a2b1db01" name="Changes" comment="Intento arreglo de tests 9">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,7 +164,7 @@
       <workItem from="1709226858104" duration="5237000" />
       <workItem from="1710347422294" duration="1873000" />
       <workItem from="1710354071918" duration="739000" />
-      <workItem from="1710402888692" duration="12600000" />
+      <workItem from="1710402888692" duration="13571000" />
     </task>
     <task id="LOCAL-00001" summary="planteamiento sistema de preguntas">
       <option name="closed" value="true" />
@@ -236,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710421543747</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Intento arreglo de tests 9">
+      <option name="closed" value="true" />
+      <created>1710422227821</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1710422227821</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +274,7 @@
     <MESSAGE value="Intento arreglo de tests 6" />
     <MESSAGE value="Intento arreglo de tests 7" />
     <MESSAGE value="Intento arreglo de tests 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Intento arreglo de tests 8" />
+    <MESSAGE value="Intento arreglo de tests 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Intento arreglo de tests 9" />
   </component>
 </project>
