@@ -3,6 +3,9 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import {Typography, Button} from '@mui/material';
 import axios from 'axios';
+import {Link} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import GameView from "./GameView";
 
 function Game({ title }) {
     const apiEndpoint = process.env.REACT_APP_API_ENDPOINT || 'http://localhost:8000';
@@ -15,7 +18,7 @@ function Game({ title }) {
             <Paper sx={{ p: 2, bgcolor: 'red' }}>
                 <Typography variant="h6">{title}</Typography>
                 <Button variant="contained" color="primary" onClick={question}>
-                    Question
+                    <Link to="/game">Play</Link>
                 </Button>
             </Paper>
         </Grid>
@@ -24,6 +27,7 @@ function Game({ title }) {
 
 function GamesPanel() {
     return (
+
         <Grid container spacing={2}>
             <Game title="Saber y ganar" />
             <Game title=" " />

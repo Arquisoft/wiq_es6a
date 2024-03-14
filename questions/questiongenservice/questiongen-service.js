@@ -32,16 +32,11 @@ const sparqlQuery = `#List of present-day countries and capital(s)
   ORDER BY ?countryLabel`;
 
 const generateQuestion = async () => {
-    console.log(2);
     try{
         const fullUrl = endpointUrl + '?query=' + encodeURIComponent( sparqlQuery );
-        console.log(3);
         const headers = { 'Accept': 'application/sparql-results+json' };
-        console.log(4);
         const response = await axios.get(fullUrl, { headers });
-        console.log(5);
         const jsonResponse = response.data;
-        console.log(6);
         const index = Math.floor(Math.random() * 200);
         console.log(jsonResponse.results.bindings[index].capitalLabel.value +
             ' es la capital de ' +
@@ -63,7 +58,7 @@ const generateQuestion = async () => {
 };
 
 app.post('/addquestion', async (req, res) => {
-    console.log(1);
+
     const question = await generateQuestion();
     const type = question.type;
     const attribute = question.attribute;

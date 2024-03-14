@@ -42,6 +42,7 @@ app.post('/getquestion', async (req, res) => {
       res.status(401).json({ error: 'Question not found' });
     } 
   } catch (error) {
+    console.log(error);
     res.status(500).json({ error: 'Internal Server Error' }); 
     }
   });  

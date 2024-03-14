@@ -6,6 +6,9 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Home from "./components/Home";
+import { RouterProvider } from 'react-router-dom';
+import GameView from "./components/GameView";
+import router from "./routers/AppRouter";
 
 function App() {
   const [showLogin, setShowLogin] = useState(true);
@@ -24,7 +27,7 @@ function App() {
   }
 
   return (
-
+      <RouterProvider router={ router }>
     <Container component="main" maxWidth="xs">
         {login ? <Home username={user}/> : (
             <>
@@ -48,6 +51,7 @@ function App() {
             )}
 
     </Container>
+      </RouterProvider>
   );
 }
 

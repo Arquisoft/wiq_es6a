@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Container, Typography, TextField, Button, Snackbar } from '@mui/material';
 
-const GetQuestion = ({type, attr}) => {
+const GetQuestion = ({type, attribute}) => {
   const [error, setError] = useState('');
   const [openSnackbar, setOpenSnackbar] = useState(false);
 
@@ -12,7 +12,7 @@ const GetQuestion = ({type, attr}) => {
   const getQuestion = async () => {
       console.log('GetQuestion');
       try {  
-        const response = await axios.post(`${apiEndpoint}/getquestion`, { type, attr } );
+        const response = await axios.post(`${apiEndpoint}/getquestion`, { type, attribute } );
         console.log('La ' + response.data.type + ' de ' + response.data.attribute + ' es ' + response.data.right);
         console.log('y ' + response.data.wrong1 + ', ' + response.data.wrong2 + ' y ' + response.data.wrong3 + ' no lo son ;-)');
         setOpenSnackbar(true);

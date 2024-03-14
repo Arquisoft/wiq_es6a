@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3a70bc3-1f0b-4042-a99e-e960a2b1db01" name="Changes" comment="planteamiento sistema de preguntas">
+    <list default="true" id="f3a70bc3-1f0b-4042-a99e-e960a2b1db01" name="Changes" comment="unión de microservicios">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions/questionaskservice/questionask-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/questions/questionaskservice/questionask-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions/questiongenservice/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/questions/questiongenservice/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions/questiongenservice/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/questions/questiongenservice/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions/questiongenservice/questiongen-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/questions/questiongenservice/questiongen-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/components/GamesPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/GamesPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/components/GetQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/GetQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,11 +53,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Git.Branch.Popup.ShowAllRemotes": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "generacionPreguntasSara",
-    "javascript.nodejs.core.library.configured.version": "20.11.1",
-    "javascript.nodejs.core.library.typings.version": "20.11.20",
+    "javascript.nodejs.core.library.configured.version": "16.2.0",
+    "javascript.nodejs.core.library.typings.version": "16.18.89",
+    "jdk.selected.JAVA_MODULE": "20",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/saraf/OneDrive/Escritorio/Documentos/Universidad/32/ASW/questions/createqservice",
     "node.js.detected.package.eslint": "true",
@@ -64,6 +75,10 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\saraf\OneDrive\Escritorio\Documentos\Universidad\32\ASW\questions\createqservice" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\UO288195\Desktop\ASW\webapp\src" />
+      <recent name="C:\Users\UO288195\Desktop\ASW\webapp" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -75,6 +90,7 @@
       <updated>1709024704264</updated>
       <workItem from="1709024705608" duration="479000" />
       <workItem from="1709226858104" duration="5237000" />
+      <workItem from="1710404791514" duration="13371000" />
     </task>
     <task id="LOCAL-00001" summary="planteamiento sistema de preguntas">
       <option name="closed" value="true" />
@@ -84,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709228469223</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="unión de microservicios">
+      <created>1710410993584</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710410993584</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +127,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="resolución de problemas y modelo de preguntas" />
     <MESSAGE value="planteamiento sistema de preguntas" />
-    <option name="LAST_COMMIT_MESSAGE" value="planteamiento sistema de preguntas" />
+    <MESSAGE value="unión de microservicios" />
+    <option name="LAST_COMMIT_MESSAGE" value="unión de microservicios" />
   </component>
 </project>
