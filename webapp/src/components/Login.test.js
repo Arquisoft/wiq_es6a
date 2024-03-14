@@ -39,7 +39,9 @@ describe('Login component', () => {
   });
 
   it('should handle error when logging in', async () => {
-    render(<Login />);
+    const sendLogin=jest.fn();
+    const sendUsername=jest.fn();
+    render(<Login sendLogin={sendLogin()} sendUsername={sendUsername()}/>);
 
     const usernameInput = screen.getByLabelText(/Username/i);
     const passwordInput = screen.getByLabelText(/Password/i);
@@ -48,6 +50,8 @@ describe('Login component', () => {
     // Mock the axios.post request to simulate an error response
     mockAxios.onPost('http://localhost:8000/login').reply(401, { error: 'Unauthorized' });
 
+    expect(sendLogin.mock.calls[0]).toBe(true);
+    expect(sendUsername.mock.calls[0]).toBe(usernameInput);
     // Simulate user input
     fireEvent.change(usernameInput, { target: { value: 'testUser' } });
     fireEvent.change(passwordInput, { target: { value: 'testPassword' } });
