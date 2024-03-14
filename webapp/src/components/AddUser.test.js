@@ -16,6 +16,7 @@ describe('AddUser component', () => {
 
     const usernameInput = screen.getByLabelText(/Username/i);
     const passwordInput = screen.getByLabelText(/Password/i);
+    const date=Date.now;
     const addUserButton = screen.getByRole('button', { name: /Add User/i });
 
     // Mock the axios.post request to simulate a successful response
@@ -24,6 +25,7 @@ describe('AddUser component', () => {
     // Simulate user input
     fireEvent.change(usernameInput, { target: { value: 'testUser' } });
     fireEvent.change(passwordInput, { target: { value: 'testPassword' } });
+    //fireEvent.change(dateInput, { target: { value: 'testDate' } });
 
     // Trigger the add user button click
     fireEvent.click(addUserButton);
@@ -39,6 +41,7 @@ describe('AddUser component', () => {
 
     const usernameInput = screen.getByLabelText(/Username/i);
     const passwordInput = screen.getByLabelText(/Password/i);
+    const date=Date.now;
     const addUserButton = screen.getByRole('button', { name: /Add User/i });
 
     // Mock the axios.post request to simulate an error response
@@ -47,7 +50,7 @@ describe('AddUser component', () => {
     // Simulate user input
     fireEvent.change(usernameInput, { target: { value: 'testUser' } });
     fireEvent.change(passwordInput, { target: { value: 'testPassword' } });
-
+    //fireEvent.change(dateInput, { target: { value: 'testDate' } });
     // Trigger the add user button click
     fireEvent.click(addUserButton);
 
