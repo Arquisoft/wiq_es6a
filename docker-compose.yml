@@ -39,6 +39,34 @@ services:
     environment:
       MONGODB_URI: mongodb://mongodb:27017/userdb
 
+  questiongenservice:
+    container_name: questiongenservice-${teamname:-defaultASW}
+    image: ghcr.io/arquisoft/wiq_es6a/questiongenservice:latest
+    profiles: ["dev", "prod"]
+    build: ./questions/questiongenservice
+    depends_on:
+      - mongodb
+    ports:
+      - "8003:8003"
+    networks:
+      - mynetwork
+    environment:
+      MONGODB_URI: mongodb://mongodb:27017/questiondb
+
+  questionaskservice:
+    container_name: questionaskservice-${teamname:-defaultASW}
+    image: ghcr.io/arquisoft/wiq_es6a/questionaskservice:latest
+    profiles: ["dev", "prod"]
+    build: ./questions/questionaskservice
+    depends_on:
+      - mongodb
+    ports:
+      - "8004:8004"
+    networks:
+      - mynetwork
+    environment:
+      MONGODB_URI: mongodb://mongodb:27017/questiondb
+
   gatewayservice:
     container_name: gatewayservice-${teamname:-defaultASW}
     image: ghcr.io/arquisoft/wiq_es6a/gatewayservice:latest
@@ -48,13 +76,17 @@ services:
       - mongodb
       - userservice
       - authservice
+      - questiongenservice
+      - questionaskservice
     ports:
       - "8000:8000"
     networks:
       - mynetwork
     environment:
-      AUTH_SERVICE_URL: http://authservice:8002
       USER_SERVICE_URL: http://userservice:8001
+      AUTH_SERVICE_URL: http://authservice:8002
+      QUESTION_GEN_SERVICE_URL: http://questiongenservice:8003
+      QUESTION_ASK_SERVICE_URL: http://questionaskservice:8004
 
   webapp:
     container_name: webapp-${teamname:-defaultASW}
