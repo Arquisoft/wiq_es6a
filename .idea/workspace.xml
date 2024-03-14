@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3a70bc3-1f0b-4042-a99e-e960a2b1db01" name="Changes" comment="Intento arreglo de tests 1">
+    <list default="true" id="f3a70bc3-1f0b-4042-a99e-e960a2b1db01" name="Changes" comment="Intento arreglo de tests 3">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/e2e/steps/register-form.steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/e2e/steps/register-form.steps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/components/AddUser.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/AddUser.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/Login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,31 +45,73 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.docker-compose.yml.authservice: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;arregloTestsAlvaro&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.11.1&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.11.20&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/saraf/OneDrive/Escritorio/Documentos/Universidad/32/ASW/questions/createqservice&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.docker-compose.yml.authservice: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "Jest.AddUser component.executor": "Run",
+    "Jest.Login component.executor": "Run",
+    "Jest.Login component.should log in successfully.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "arregloTestsAlvaro",
+    "javascript.nodejs.core.library.configured.version": "20.11.1",
+    "javascript.nodejs.core.library.typings.version": "",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/saraf/OneDrive/Escritorio/Documentos/Universidad/32/ASW/questions/createqservice",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "C:/Users/Usuario/Desktop/ASW Lab/Generador Respuesta Wikidata/webapp/node_modules/react-scripts",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\saraf\OneDrive\Escritorio\Documentos\Universidad\32\ASW\questions\createqservice" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.authservice: Compose Deployment">
+  <component name="RunManager" selected="Jest.AddUser component">
+    <configuration name="AddUser component" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/webapp/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$/webapp" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/webapp/src/components/AddUser.test.js" />
+      <test-names>
+        <test-name value="AddUser component" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Login component" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/webapp/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$/webapp" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/webapp/src/components/Login.test.js" />
+      <test-names>
+        <test-name value="Login component" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Login component.should log in successfully" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/webapp/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$/webapp" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/webapp/src/components/Login.test.js" />
+      <test-names>
+        <test-name value="Login component" />
+        <test-name value="should log in successfully" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -98,6 +141,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.AddUser component" />
+        <item itemvalue="Jest.Login component.should log in successfully" />
+        <item itemvalue="Jest.Login component" />
         <item itemvalue="Docker.docker-compose.yml.authservice: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
@@ -122,6 +168,7 @@
       <workItem from="1709226858104" duration="5237000" />
       <workItem from="1710347422294" duration="1873000" />
       <workItem from="1710354071918" duration="739000" />
+      <workItem from="1710402888692" duration="8317000" />
     </task>
     <task id="LOCAL-00001" summary="planteamiento sistema de preguntas">
       <option name="closed" value="true" />
@@ -139,7 +186,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710325879079</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Intento arreglo de tests 2">
+      <option name="closed" value="true" />
+      <created>1710406054136</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710406054136</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Intento arreglo de tests 3">
+      <option name="closed" value="true" />
+      <created>1710408151303</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710408151303</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +223,8 @@
     <MESSAGE value="resolución de problemas y modelo de preguntas" />
     <MESSAGE value="planteamiento sistema de preguntas" />
     <MESSAGE value="Intento arreglo de tests 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Intento arreglo de tests 1" />
+    <MESSAGE value="Intento arreglo de tests 2" />
+    <MESSAGE value="Intento arreglo de tests 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Intento arreglo de tests 3" />
   </component>
 </project>

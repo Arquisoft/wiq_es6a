@@ -23,7 +23,7 @@ const Login = ({sendLogin, sendUsername}) => {
 
       setCreatedAt(userCreatedAt);
       setLoginSuccess(true);
-      sendLogin(loginSuccess);
+      sendLogin(loginSuccess); //dmfskdskmfmfdkm
       sendUsername(username);
       setOpenSnackbar(true);
     } catch (error) {
