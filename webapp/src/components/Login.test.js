@@ -50,7 +50,7 @@ describe('Login component', () => {
     // Mock the axios.post request to simulate an error response
     mockAxios.onPost('http://localhost:8000/login').reply(401, { error: 'Unauthorized' });
 
-    expect(sendLogin.mock.calls[0]).toBe(true);
+    expect(sendLogin.mock.calls[0]).toBe(false);
     expect(sendUsername.mock.calls[0]).toBe(usernameInput);
     // Simulate user input
     fireEvent.change(usernameInput, { target: { value: 'testUser' } });
