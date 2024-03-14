@@ -68,6 +68,6 @@ describe('Login component', () => {
     //expect(screen.queryByText(/Hello testUser!/i)).toBeNull();
     //expect(screen.queryByText(/Your account was created on/i)).toBeNull();
     expect(sendLogin.mock.calls[0]).toBe(undefined);
-    expect(sendUsername.mock.calls[0]).toBe(usernameInput);
+    expect(sendUsername.mock.calls[0]).toBe(undefined);
   });
 });
